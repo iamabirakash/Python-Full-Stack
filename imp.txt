@@ -1,0 +1,66 @@
+21 Jan
+
+python -m venv LPU -> To create a virtual enviroment
+.\LPU\bin\activate -> To acivate the enviroment
+
+deactivate -> to deactivate the enviroment
+rm -r LPU - > to remove directory recursively, all the file & sub folders
+mv oldname newname -> To rename the Folder
+
+'m' -> stands for message
+'venv' -> virtual enviroment
+
+22 Jan
+
+Wider Range -> Class
+Derived -> Objects
+
+Animals -> Class
+Lion, Tiger -> Objects
+
+'.' -> Location, LEKE AAO
+
+python filename.py -> To run the file
+
+Supervised Learning -> Where we have both input and output. The eq is y = mx + c.
+UnSupervised Learning -> Where we don't have the output. Not label data. The model try to find the pattern.
+ReEnforcement Learning -> Which tries to learn from the experience. Reward based learning.
+
+Overfitting -> Where the model gives alot of accuracy on the training data but fails in testing data.
+Underfitting -> Which fails at the training data as well as testing data.
+TradeOff -> Which performs well on training data as well as testing data.
+
+sklearn -> warehouse of ML.
+
+                                           PV
+                                        Yes  No
+                                       __________
+Classification Report ->              | TP  | FN | P -> Positive Single
+                                Yes   |_____|____| N -> Negative Single
+                            AV        | FP  | TN | T -> If Both Same
+                                No    |_____|____| F -> If Both Not Same
+
+                                            PV
+                                         No  Yes
+                                       __________
+                                      |  TN | FP |
+                                No    |_____|____|
+                            AV        |  FN | TP |
+                                Yes   |_____|____|
+
+                                            AV
+                                         Yes  No
+                                       __________
+                                      |  TP | FP |
+                                Yes   |_____|____|
+                            PV        |  FN | TN |
+                                No    |_____|____|
+
+                                            AV
+                                         No  Yes
+                                       __________
+                                      |  TN | FN |
+                                No    |_____|____|
+                            PV        |  FP | TP |
+                                Yes   |_____|____|
+
