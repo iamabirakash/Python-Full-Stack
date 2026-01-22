@@ -35,7 +35,7 @@ sklearn -> warehouse of ML.
                                        PV
                                     Yes  No
                                    __________
-Confusion Matrix ->                  | TP  | FN | P -> Positive Single
+Confusion Matrix ->               | TP  | FN | P -> Positive Single
                             Yes   |_____|____| N -> Negative Single
                         AV        | FP  | TN | T -> If Both Same
                             No    |_____|____| F -> If Both Not Same
@@ -64,3 +64,7 @@ Confusion Matrix ->                  | TP  | FN | P -> Positive Single
                         PV        |  FP | TP |
                             Yes   |_____|____|
 
+Accuracy Score -> TP+TN / TP+TN+FP+FN
+Precicison -> TP / TP+FP
+Recall -> TP / TP+FN
+F1 Score -> 2 * ( Precision*Recall / Precision + Recall )
