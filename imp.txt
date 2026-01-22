@@ -32,35 +32,35 @@ TradeOff -> Which performs well on training data as well as testing data.
 
 sklearn -> warehouse of ML.
 
-                                           PV
-                                        Yes  No
-                                       __________
-Classification Report ->              | TP  | FN | P -> Positive Single
-                                Yes   |_____|____| N -> Negative Single
-                            AV        | FP  | TN | T -> If Both Same
-                                No    |_____|____| F -> If Both Not Same
+                                       PV
+                                    Yes  No
+                                   __________
+Confusion Matrix ->                  | TP  | FN | P -> Positive Single
+                            Yes   |_____|____| N -> Negative Single
+                        AV        | FP  | TN | T -> If Both Same
+                            No    |_____|____| F -> If Both Not Same
 
-                                            PV
-                                         No  Yes
-                                       __________
-                                      |  TN | FP |
-                                No    |_____|____|
-                            AV        |  FN | TP |
-                                Yes   |_____|____|
+                                        PV
+                                     No  Yes
+                                   __________
+                                  |  TN | FP |
+                            No    |_____|____|
+                        AV        |  FN | TP |
+                            Yes   |_____|____|
 
-                                            AV
-                                         Yes  No
-                                       __________
-                                      |  TP | FP |
-                                Yes   |_____|____|
-                            PV        |  FN | TN |
-                                No    |_____|____|
+                                        AV
+                                     Yes  No
+                                   __________
+                                  |  TP | FP |
+                            Yes   |_____|____|
+                        PV        |  FN | TN |
+                            No    |_____|____|
 
-                                            AV
-                                         No  Yes
-                                       __________
-                                      |  TN | FN |
-                                No    |_____|____|
-                            PV        |  FP | TP |
-                                Yes   |_____|____|
+                                        AV
+                                     No  Yes
+                                   __________
+                                  |  TN | FN |
+                            No    |_____|____|
+                        PV        |  FP | TP |
+                            Yes   |_____|____|
 
