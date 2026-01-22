@@ -65,6 +65,6 @@ Confusion Matrix ->               | TP  | FN | P -> Positive Single
                             Yes   |_____|____|
 
 Accuracy Score -> TP+TN / TP+TN+FP+FN
-Precicison -> TP / TP+FP
-Recall -> TP / TP+FN
-F1 Score -> 2 * ( Precision*Recall / Precision + Recall )
+Precicison -> TP / TP+FP                 //Predicted mai kitna sahi predict kia.
+Recall -> TP / TP+FN                     //Actual mai kitna sahi predict kia.
+F1 Score -> 2 * ( Precision * Recall / Precision + Recall )
