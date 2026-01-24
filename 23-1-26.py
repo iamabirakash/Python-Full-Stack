@@ -200,7 +200,8 @@
 # print(new_lst)
 
 
-#Usage of List Comprehension
+#Usage of List Comprehension: wants to store previous list items in new list: u can use this using append also(brute force approach), to do the same thing but in a
+# shorter syntax then we use list comprehension
 # lst=[10,20,30];
 # new_lst=[i for i in lst];      # list comrehension, one i for appending, second i for  iteration
 # new_lst=[i+10 for i in lst];
@@ -237,4 +238,5 @@
 #filter --> select the elements based on few conditions than, filter out the elements based on same conditions
 lst=[2,3,3,3,4,5,6,7,8];
 res=list(filter(lambda x: x>5,lst))
+
 print(res)
