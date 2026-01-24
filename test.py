@@ -1,0 +1,119 @@
+# 1.
+# a= "Python is powerful"
+# b=list(a.split())
+# print(a)
+# l2=[]
+# for i in b:
+#     l2.append(i[::-1])
+# # print(l2)
+# print(" ".join(l2))
+
+
+# 3. 
+# def test(*args):
+#     mul=1
+#     for i in args:
+#         a=type(i)
+#         if (a==int):
+#                mul=mul*i;
+#     print (mul); 
+# a= test(2,3,'a',4)
+
+
+# 4.
+# lst=[1,2,3,4,5,6]
+# new_lst=list(filter(lambda x: x%2==0,lst))
+# print(new_lst)
+# res=list(map(lambda x: x*x,new_lst))
+# print(res)
+
+# 5.
+# a="Python makes programming interesting"
+# b=list(a.split())
+# max=0;
+# max_str=" "
+# for i in b:
+#     n=len(i);
+#     if(n>max):
+#         max=n
+#         max_str=i;
+# print(max_str," : ", max)
+
+# 8.
+# a = [1, 2, 3, 2, 1, 4]
+# n = len(a)
+# i = 0
+# while i < n:
+#     j = i + 1
+#     while j < n:
+#         if a[i] == a[j]:
+#             a.pop(j)   
+#             n -= 1    
+#         else:
+#             j += 1
+#     i += 1
+
+# print(a)
+
+# 9.
+# def comm(list1, list2):
+#     result = []
+#     for i in list1:
+#         if i in list2 and i not in result:
+#             result.append(i)
+#     return result
+# list1=[1,2,3,4]
+# list2=[3,4,5,6]
+# print(com(list1, list2))
+
+
+# 10.
+# def rot(lst, k):
+#     n = len(lst)
+#     k = k % n  
+#     return lst[-k:] + lst[:-k]
+# a = [1, 2, 3, 4, 5]
+# k = 2
+# rotated = rot(a, k)
+# print(rotated)
+
+
+# 11.
+# def find(lst):
+#     n = len(lst) + 1  
+#     exp= n * (n + 1) / 2
+#     act= sum(lst)
+#     return exp - act
+# num = [1, 2, 3, 5]
+
+# print(find(num))
+
+# 14.
+# USER= "amisha"
+# PASS = "12345"
+# attempts = 0
+
+# while attempts < 3:
+#     user = input("Enter username: ")
+#     pwd = input("Enter password: ")
+#     if user == USER and pwd == PASS:
+#         print("Login Successful")
+#         break
+#     else:
+#         attempts += 1
+
+# if attempts == 3:
+#     print("Account Locked")
+
+# 12.
+def find(s):
+    count={}
+    for char in s:
+        count[char]=count.get(char,0)+1;
+    for char in s:
+        if count[char]==1:
+            return char
+    return None
+input='swiss';
+result=find(input);
+print(result)
