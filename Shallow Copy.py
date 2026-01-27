@@ -113,3 +113,4 @@ print(str.upper())
 print(str.capitalize())
 print(str.count('a'));  #str--> occurence of which letter
 print(str.title())
+
