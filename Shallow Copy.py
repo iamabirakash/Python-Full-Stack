@@ -114,3 +114,43 @@ print(str.capitalize())
 print(str.count('a'));  #str--> occurence of which letter
 print(str.title())
 
+#Decorators--> it will add behaviour to function --> ehat decorator do is decorate the code basically add
+# whenever we decorate the function need to wrap uo the logic 
+# def greet(fx):  #this is our decorator , we can pass the data from one function to another function
+#     def mfx():
+#         print("Hi, class ");
+#         fx()        #the function we are decorating this time and here we are decorating show function
+#         print("Function is executed"); #this logic is wrap up inside another function that is mfx
+#     return mfx;
+
+# @greet  #we are using @--> annotation to tell the interpreter that we are decorating this function
+# def show():
+#     print("This is a function")
+#show(); to print show function
+# @greet
+# def test():
+#     print("This is test function")
+
+# test();
+# @greet
+# def bday():
+#     print("HAPPY BIRTHDAY")
+# bday();
+
+# @greet
+# def test():
+#     print("This is test function")
+
+# greet(test)(); #pass function as arguments  no need to put brackets
+
+def bday(fx):
+    def happy():
+        print("HAPPY BIRTHDAY")
+        fx()
+        print("BIRTHDAY KHTM");
+    return happy;
+
+@bday
+def amisha():
+    print("HELLO")
+amisha();
