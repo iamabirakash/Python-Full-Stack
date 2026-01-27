@@ -114,6 +114,8 @@ print(str.capitalize())
 print(str.count('a'));  #str--> occurence of which letter
 print(str.title())
 
+
+
 #Decorators--> it will add behaviour to function --> ehat decorator do is decorate the code basically add
 # whenever we decorate the function need to wrap uo the logic 
 # def greet(fx):  #this is our decorator , we can pass the data from one function to another function
@@ -141,16 +143,95 @@ print(str.title())
 # def test():
 #     print("This is test function")
 
-# greet(test)(); #pass function as arguments  no need to put brackets
+# greet(test)(); #pass function as arguments  no need to put brackets we are passing the show function as an argument to the greet function
 
-def bday(fx):
-    def happy():
-        print("HAPPY BIRTHDAY")
-        fx()
-        print("BIRTHDAY KHTM");
-    return happy;
+# def bday(fx):
+#     def happy():
+#         print("HAPPY BIRTHDAY")
+#         fx()
+#         print("BIRTHDAY KHTM");
+#     return happy;
 
-@bday
-def amisha():
-    print("HELLO")
-amisha();
+# @bday
+# def amisha():
+#     print("HELLO")
+# amisha();
+
+#this is a type of encapsulation --> find, wrap the data
+# We can pass the value/statement with the help of return keyword
+
+# def greet(fx):
+#     def mfx():
+#         print("Hi, class");
+#         fx();
+#         print("Function executed");
+#     return mfx;
+
+# def add(a,b):
+#     print(a+b);                                                                                                            
+# greet(add(10,20))();
+
+
+# def greet(fx):                                                                                                                                                     
+#     def mfx(a,b):
+#         print("Hi, class");
+#         fx(a,b);
+#         print("Function executed");
+#     return mfx;
+
+# def add(a,b):
+#     print(a+b);
+# greet(add)(10,20);
+
+# def greet(fx):
+#     def mfx(*args):
+#         print("Hi, class");
+#         fx(*args);
+#         print("Function executed");
+#     return mfx;
+
+# def add(a,b):
+#     print(a+b);
+# greet(add)(10,20);
+
+#regex: regular expresion--> to get some insigts from the pattern, pattern matching in strings
+# import re   #importing re module
+
+#basic functions
+# # search()- find the first occurence of the word, to search the particular word at the starting of the list
+# text="Hello World"
+# result=re.search("World",text)    #2. parameters 1. what to search, where to search
+# if result:
+#     print("Found...")
+
+# #re.finadall() --> return all matches as a list
+# s='cat bat rat mat'
+# print(re.findall("at",s))
+
+# # re.match--> 
+# print(re.match("bat",s)) #if the word is in the starting then only we can find the word otherwise we cant
+# print(re.match("cat",s))
+
+#split
+# str="python is a high level language";
+# result=str.split()
+# print(result)
+
+# import math
+# from math import sqrt, factorial
+#from math import * (to import everthing from math module)
+# print(sqrt(16));
+# print(math.sqrt(9));
+
+# print(factorial(5));
+
+
+# can we accrees the method inside the file  --> yes
+# import calc 
+# print(calc.add(10,20))
+
+from datetime import datetime
+# print(datetime.date(3-2-2026))
+print(datetime.now())
+print(datetime.today())
+
