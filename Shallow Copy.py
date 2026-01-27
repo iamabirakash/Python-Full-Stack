@@ -250,4 +250,38 @@ colors=['red','blue','black'];
 random.shuffle(colors);
 print(colors);
 
+#guess the number game
+print("*****************************Guess the Number game*********************************")
+n=random.randint(1,50)
+print();
+count=0;
+count1 =10
+while(True):
+    if(count1>0):
+        num=int(input("Guess a Number (1-50): "))
+        if(num>50):
+            print("Choose number betwwen the given range.")
+        
+        else:
+            if(num==n):
+                print("YOU WON!!")
+                print("Chances left: ", count1)
+                print("In how much counts u did it: ",count)
+                print("Acurracy",100-((count/10)*100))
+                break;
+            if(num>n):
+                print("Guess the smaller number")
+                print("Chances left: ", count1)
+                count+=1;
+                count1-=1
+                continue;
+            else:
+                print("Guess the larger number")
+                print("Chances left: ", count1)
+                count+=1;
+                count1-=1
+                continue;
+    else:
+        print("YOU LOOSE, PLAY AGAIN!!")
+        break;
 
