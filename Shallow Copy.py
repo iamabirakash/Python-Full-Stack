@@ -233,5 +233,21 @@ print(str.title())
 from datetime import datetime
 # print(datetime.date(3-2-2026))
 print(datetime.now())
-print(datetime.today())
+print(datetime.today()) 
+#datetime is a module and function name also
+
+#print specific time and date with the help of time and date module
+
+
+#random module
+import random
+# print(random.random())     #provides random values bw 0 to 1
+# print(random.randint(1,10));
+# print(random.seed(3));  #this is used to fix the value of randint 
+# print(random.randint(1,10));
+
+colors=['red','blue','black'];
+random.shuffle(colors);
+print(colors);
+
 
