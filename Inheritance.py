@@ -235,4 +235,62 @@ obj=C();
 obj.showA();
 obj.showB();
 obj.showC();
-#--> multiple
+
+
+
+
+#Method Overriding
+# class A:
+#     def display(self):
+#         print("A Method.....");
+# class B(A):
+#     def display(self):
+#         #how to print a method befor b method
+#         super().display(); #super works for parent method or constructor, call the display method which belons to parent(A) class
+#         print("B Method.....");
+#how to print a method befor b method
+
+# obj = B();
+# print(isinstance(obj,A));
+# obj.display();
+
+
+#--> multiple--> a child can have multiple parents
+class A:
+    # def hello(self):
+    #     print("Hello");
+    def show(self):
+        print("A");
+
+class B(A):
+    def show(self):
+        super().show();
+        print("B");
+class C(A):
+    def show(self):
+        super().show();
+        print("C");
+class D(B,C):
+    def show(self):
+        super().show();
+        print("D");
+
+obj=D();
+obj.show()
+# print(D.mro())
+# obj.show();
+# obj.hello();
+#   A
+#B      C                       this is known as diamond probelem
+#   D
+
+#MRO--> Method resolution order
+#used to check the route how D will reach to A
+#to check the execution path
+
+
+#Inheritance--> reusability
+#polymorphism-->
+#encapsulation--> data security
+#Abstraction--> access control, hiding the implementation part, to hide unneccessary info
+
