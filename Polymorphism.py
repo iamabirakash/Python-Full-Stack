@@ -1,3 +1,7 @@
+#Inheritance--> reusability
+#polymorphism-->same function, but different behaviour
+#encapsulation--> data security
+#Abstraction--> access control, hiding the implementation part, to hide unneccessary info
 #constructor overloading--> same name but diff parameters
 #overloading--> we are changing the parameters
 #overriding--> same function name, but different definition
@@ -19,4 +23,5 @@ class Car(vehicle):
 obj=vehicle("BMW","Black");
 obj.display();
 obj2= Car("Creta","White",5)
+
 obj2.display();
