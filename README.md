@@ -7,3 +7,5 @@
 `pip install django` 
 
 `django-admin startproject project`
+
+`pyhton manage.py runserver`
