@@ -195,10 +195,10 @@ except AgeNotValid as e:
 
 
 # 🔰 Installing Django
-`python -m venv foldername`
+```python -m venv foldername```
 
-`pip install django` 
+```pip install django```
 
-`django-admin startproject project`
+```django-admin startproject project```
 
-`pyhton manage.py runserver`
+```pyhton manage.py runserver```
