@@ -132,4 +132,21 @@ try:      #code in which we feel that maybe an error will occur
     print(obj.age);
 except AgeNotValid as e:   #if any code occurinside try block it will come to the except block
     print(e)
+class MarksNotValid(Exception):
+    pass;
+
+
+class Student:
+    def __init__(self,name,marks):
+        self.name=name;
+        if(marks>100 or marks <0):
+            raise MarksNotValid("Marks are not valid.");
+        self.marks=marks;
+try:
+    obj=Student("ABC",34);
+    # obj=Student("ABC",-34);
+    print(obj.name);
+    print(obj.marks);
+except MarksNotValid as m:
+    print(m)
 
