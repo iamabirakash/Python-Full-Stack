@@ -121,3 +121,57 @@ with open("menu.csv","r") as f:
     for i in reader:
 
         print(i)
+
+# with open("menu.csv","r") as f:
+#     reader=csv.DictReader(f);
+#     for i in reader:
+#         print(i)
+
+#want to store python objects into file
+#pickle --> dumps (Serialize) --> convert python obj to byte string, load (deserialization) --> binary fole to python obj
+import pickle
+# dict={
+#     "name": "Dictionary_Object",
+#     "id":1
+# }
+# with open("Data.dat", "wb") as f:
+#     pickle.dump(dict,f);
+# print("Data dumped successfully")
+
+# with open("Data.dat", "rb") as f:
+#     data=pickle.load(f);
+# print(data)
+
+
+# l1=["mukund","hello","hii"]
+# with open("Data.dat", "wb") as f:
+#     pickle.dump(l1,f);
+# print("Data dumped successfully")
+
+# with open("Data.dat", "rb") as f:
+#     data=pickle.load(f);
+# print(data)
+
+# import json
+# data={
+#     "name":"Alice",
+#     "age":25,
+#     "city":"New York",
+#     "hobbies":["reading","coding"]
+# }
+# with open("data.json","w") as file:
+#     json.dump(data,file)
+
+
+#shutil--> use for advance/high level operations--> copy files, copy file with metadata etc
+import shutil
+# shutil.copy("source.txt","destination.txt")
+#copy file with metadata
+# shutil.copy2("source.txt","destination.txt")
+#copy entire directory
+# shutil.copytree("source_folder","dest_folder")
+#move file/directory
+# shutil.move("source.txt","destination.txt")
+#remove directory (even if not empty)
+# shutil.mtree()
+
