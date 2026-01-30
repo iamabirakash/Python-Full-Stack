@@ -119,4 +119,5 @@ with open("menu.csv","w") as f:
 with open("menu.csv","r") as f:
     reader=csv.reader(f);
     for i in reader:
+
         print(i)
