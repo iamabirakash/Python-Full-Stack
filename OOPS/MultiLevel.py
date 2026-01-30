@@ -7,37 +7,61 @@
 # class EV(Car):
 #     def display(self):
 #         print("This is an EV Car")
-
 # ev = EV()
 # ev.show()
 # ev.info()
 # ev.display()
 
-class Person:
-    def __init__(self,name,regno):
-        self.name = name
-        self.__regno = regno
-    def show(self):
-        print("Name :-",self.name)
-        print("Regno :-",self.__regno)
-class Employee(Person):
-    def __init__(self,name,regno,sal,empid):
-        super().__init__(name,regno)
-        self.sal = sal
-        self._empid = empid
-    def info(self):
-        print("Salary :-",self.sal)
-        print("Emp ID :-",self._empid)
-class Manager(Employee):
-    def __init__(self, name, regno, sal, empid, dept):
-        super().__init__(name, regno, sal, dept)
-        self.dept = dept
-    def display(self):
-        print("Department :-",self.dept)
-m = Manager("Abir", "21CSE001", 1000000, "EMP101", "CSE")
-m.display()
-m.info()
-m.show()
-print("---------")
-print(m.name)
-print(m._empid)
+# Q2
+# class Person:
+#     def __init__(self,name,regno):
+#         self.name = name
+#         self.__regno = regno
+#     def show(self):
+#         print("Name :-",self.name)
+#         print("Regno :-",self.__regno)
+# class Employee(Person):
+#     def __init__(self,name,regno,sal,empid):
+#         super().__init__(name,regno)
+#         self.sal = sal
+#         self._empid = empid
+#     def info(self):
+#         print("Salary :-",self.sal)
+#         print("Emp ID :-",self._empid)
+# class Manager(Employee):
+#     def __init__(self, name, regno, sal, empid, dept):
+#         super().__init__(name, regno, sal, dept)
+#         self.dept = dept
+#     def display(self):
+#         print("Department :-",self.dept)
+# m = Manager("Abir", "21CSE001", 1000000, "EMP101", "CSE")
+# m.display()
+# m.info()
+# m.show()
+# print("---------")
+# print(m.name)
+# print(m._empid)
+
+# Q3
+class Animal:
+    def eat(self):
+        print("Animal Eating")
+    def _eating(self):
+        print("Eatin Protectedly")
+class Dog(Animal):
+    def bark(self):
+        print("Dog is Barking")
+    def __barking(self):
+        print("Dog is Barking Privately")
+class Puppy(Dog):
+    def play(self):
+        print("Puppy is Playing")
+    def playing(self):
+        print("Puppy is Publicaly")
+p = Puppy()
+p.play()
+p.playing()
+p.bark()
+# p.barking()
+p.eat()
+p._eating()
