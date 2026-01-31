@@ -43,17 +43,85 @@
 # ca = Cash()
 # ca.cash_payment(300)
 
+# 2. Create a parent class Notification and child classes Email, SMS, and Push. Implement a general send method and specific send methods for each notification type.
+# class Notification:
+#     def send(self):
+#         print("Notification send through :-",self.mess)
+# class Email(Notification):
+#     def __init__(self,mess):
+#         self.mess = mess
+#         self.send()
+# class SMS(Notification):
+#     def __init__(self,mess):
+#         self.mess = mess
+#         self.send()
+# class Push(Notification):
+#     def __init__(self,mess):
+#         self.mess = mess
+#         self.send()
+# e = Email("Email")
+# s = Email("SMS")
+# p = Email("Push")
+
 #Q3. Create a parent class Exam and child classes OnlineExam and OfflineExam. Add functionality for starting the exam and special features for each exam mode.
-class Exam:
-    def info(self):
-        print("Mode of Examination :-",self.mode)
-class OnlineExam(Exam):
-    def __init__(self,mode):
-        self.mode = mode
-        super().info()
-class OfflineExam(Exam):
-    def __init__(self,mode):
-        self.mode = mode
-        super().info()
-e = OfflineExam("Offline")
-o = OnlineExam("Online")
+# class Exam:
+#     def info(self):
+#         print("Mode of Examination :-",self.mode)
+# class OnlineExam(Exam):
+#     def __init__(self,mode):
+#         self.mode = mode
+#         super().info()
+# class OfflineExam(Exam):
+#     def __init__(self,mode):
+#         self.mode = mode
+#         super().info()
+# e = OfflineExam("Offline")
+# o = OnlineExam("Online")
+
+#Q4.Create a parent class Transport and child classes Train, Flight, and Ship. Implement common travel method and specialized travel methods for each transport type.
+# class Transport:
+#     def mode(self):
+#         print("Mode of Transport :-",self.method)
+# class Train(Transport):
+#     def __init__(self,method):
+#         self.method = method
+#         self.mode()
+# class Flight(Transport):
+#     def __init__(self,method):
+#         self.method = method
+#         self.mode()
+# class Ship(Transport):
+#     def __init__(self,method):
+#         self.method = method
+#         self.mode()
+# t = Train("Train")
+# f = Flight("Flight")
+# s = Ship("Ship")
+
+#Q5.Create a parent class Employee and child classes HR, Engineer, and Sales. Implement attendance functionality and specific job-related methods in each child.
+# Parent class
+# class Employee:
+#     def __init__(self, name):
+#         self.name = name
+#     def attendance(self):
+#         print(self.name, "has marked attendance")
+# class HR(Employee):
+#     def manage_recruitment(self):
+#         print(self.name, "is managing recruitment")
+# class Engineer(Employee):
+#     def develop_software(self):
+#         print(self.name, "is developing software")
+# class Sales(Employee):
+#     def sell_products(self):
+#         print(self.name, "is selling products")
+# hr = HR("Amit")
+# eng = Engineer("Riya")
+# sale = Sales("Rahul")
+# hr.attendance()
+# hr.manage_recruitment()
+
+eng.attendance()
+eng.develop_software()
+
+sale.attendance()
+sale.sell_products()
