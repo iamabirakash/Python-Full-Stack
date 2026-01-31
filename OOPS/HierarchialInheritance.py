@@ -146,26 +146,104 @@
 
 #Q7. Create a parent class Content and child classes Blog, Video, and Podcast. Implement content publishing and specialized creation methods in each content type.
 # Parent class
-class Content:
-    def __init__(self, title):
-        self.title = title
-    def publish(self):
-        print(f"Publishing content: {self.title}")
-class Blog(Content):
-    def write_blog(self):
-        print(f"Writing blog titled '{self.title}'")
-class Video(Content):
-    def record_video(self):
-        print(f"Recording video titled '{self.title}'")
-class Podcast(Content):
-    def record_podcast(self):
-        print(f"Recording podcast titled '{self.title}'")
-b = Blog("Python OOP Basics")
-b.publish()
-b.write_blog()
-v = Video("Django Tutorial")
-v.publish()
-v.record_video()
-p = Podcast("Tech Talk Episode 1")
-p.publish()
-p.record_podcast()
+# class Content:
+#     def __init__(self, title):
+#         self.title = title
+#     def publish(self):
+#         print(f"Publishing content: {self.title}")
+# class Blog(Content):
+#     def write_blog(self):
+#         print(f"Writing blog titled '{self.title}'")
+# class Video(Content):
+#     def record_video(self):
+#         print(f"Recording video titled '{self.title}'")
+# class Podcast(Content):
+#     def record_podcast(self):
+#         print(f"Recording podcast titled '{self.title}'")
+# b = Blog("Python OOP Basics")
+# b.publish()
+# b.write_blog()
+# v = Video("Django Tutorial")
+# v.publish()
+# v.record_video()
+# p = Podcast("Tech Talk Episode 1")
+# p.publish()
+# p.record_podcast()
+
+# 8. Create a parent class Ticket and child classes MovieTicket, BusTicket, and FlightTicket. Add ticket booking functionality and special booking details for each ticket type.
+# Parent class
+# class Ticket:
+#     def __init__(self, ticket_no):
+#         self.ticket_no = ticket_no
+#     def book_ticket(self):
+#         print(f"Ticket {self.ticket_no} booked successfully")
+# class MovieTicket(Ticket):
+#     def movie_details(self, movie_name, seat):
+#         print(f"Movie: {movie_name}, Seat: {seat}")
+# class BusTicket(Ticket):
+#     def bus_details(self, route, seat):
+#         print(f"Route: {route}, Seat: {seat}")
+# class FlightTicket(Ticket):
+#     def flight_details(self, flight_name, seat):
+#         print(f"Flight: {flight_name}, Seat: {seat}")
+# m = MovieTicket(101)
+# m.book_ticket()
+# m.movie_details("Inception", "A10")
+# b = BusTicket(202)
+# b.book_ticket()
+# b.bus_details("Delhi to Jaipur", "12")
+# f = FlightTicket(303)
+# f.book_ticket()
+# f.flight_details("AI-202", "18C")
+
+#Q9. Create a parent class File and child classes PDF, ImageFile, and AudioFile. Implement file opening method and specialized actions for each file type.
+# Parent class
+# class File:
+#     def __init__(self, filename):
+#         self.filename = filename
+#     def open_file(self):
+#         print(f"Opening file: {self.filename}")
+# class PDF(File):
+#     def read_pdf(self):
+#         print(f"Reading PDF file: {self.filename}")
+# class ImageFile(File):
+#     def view_image(self):
+#         print(f"Viewing image file: {self.filename}")
+# class AudioFile(File):
+#     def play_audio(self):
+#         print(f"Playing audio file: {self.filename}")
+# p = PDF("notes.pdf")
+# i = ImageFile("photo.jpg")
+# a = AudioFile("song.mp3")
+# p.open_file()
+# p.read_pdf()
+# i.open_file()
+# i.view_image()
+# a.open_file()
+# a.play_audio()
+
+# 10. Create a parent class Service and child classes Cleaning, Repair, and Delivery. Implement service request functionality and specialized service methods for each service type
+# Parent class
+class Service:
+    def __init__(self, service_id):
+        self.service_id = service_id
+    def request_service(self):
+        print(f"Service ID {self.service_id} has been requested")
+class Cleaning(Service):
+    def clean_area(self, area):
+        print(f"Cleaning service for {area}")
+class Repair(Service):
+    def repair_item(self, item):
+        print(f"Repair service for {item}")
+class Delivery(Service):
+    def deliver_item(self, item, address):
+        print(f"Delivering {item} to {address}")
+c = Cleaning(1)
+r = Repair(2)
+d = Delivery(3)
+c.request_service()
+c.clean_area("Office")
+r.request_service()
+r.repair_item("Laptop")
+d.request_service()
+d.deliver_item("Package", "New Delhi")
