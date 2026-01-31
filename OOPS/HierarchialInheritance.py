@@ -119,9 +119,53 @@
 # sale = Sales("Rahul")
 # hr.attendance()
 # hr.manage_recruitment()
+# eng.attendance()
+# eng.develop_software()
+# sale.attendance()
+# sale.sell_products()
 
-eng.attendance()
-eng.develop_software()
+#Q6.Create a parent class Order and child classes FoodOrder, GroceryOrder, and MedicineOrder. Add order placement method and specialized processing methods for each order type.
+# class Order:
+#     def type(self):
+#         print("Type of Order :-",self.order)
+# class FoodOrder(Order):
+#     def __init__(self,order):
+#         self.order = order
+#         self.type()
+# class GroceryOrder(Order):
+#     def __init__(self,order):
+#         self.order = order
+#         self.type()
+# class MedicineOrder(Order):
+#     def __init__(self,order):
+#         self.order = order
+#         self.type()
+# fo = FoodOrder("FoodOrder")
+# go = FoodOrder("GroceryOrder")
+# mo = FoodOrder("MedicineOrder")
 
-sale.attendance()
-sale.sell_products()
+#Q7. Create a parent class Content and child classes Blog, Video, and Podcast. Implement content publishing and specialized creation methods in each content type.
+# Parent class
+class Content:
+    def __init__(self, title):
+        self.title = title
+    def publish(self):
+        print(f"Publishing content: {self.title}")
+class Blog(Content):
+    def write_blog(self):
+        print(f"Writing blog titled '{self.title}'")
+class Video(Content):
+    def record_video(self):
+        print(f"Recording video titled '{self.title}'")
+class Podcast(Content):
+    def record_podcast(self):
+        print(f"Recording podcast titled '{self.title}'")
+b = Blog("Python OOP Basics")
+b.publish()
+b.write_blog()
+v = Video("Django Tutorial")
+v.publish()
+v.record_video()
+p = Podcast("Tech Talk Episode 1")
+p.publish()
+p.record_podcast()
