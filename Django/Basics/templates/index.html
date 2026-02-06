@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="h1">Welcome to the Home Page!</div>
+    <p>This is the index page content. Add your dynamic data here, e.g., {{ welcome_message }}.</p>
+{% endblock %}
+
+{% block title %}
+    {{block.super}}
+{% endblock %}
