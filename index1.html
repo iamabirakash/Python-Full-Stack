@@ -1,0 +1,61 @@
+<!-- Flexbox: 1D layout (where we can mange only row or only column),for inner-->
+<!-- Grid: 2D layout (where we can manage row and columns both)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+   
+<div class="grid grid-cols-2 gap-4">
+
+   <!-- Navbar -->
+   <div class="bg-gray-800 col-span-2 text-2xl h-[70px] items-center">
+      <div class="text-white flex justify-between px-5 mt-3">
+         <h1 class="text-4xl font-bold">Logo</h1>
+         <ol class="flex gap-9">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+         </ol>
+      </div>
+   </div>
+
+   <!-- Image -->
+   <div class="bg-white row-span-2 mx-4">
+      <img src="download.jpg" class="w-full shadow-xl rounded-xl"/>
+   </div>
+  
+   <!-- Content 1 -->
+   <div class="bg-white text-center rounded-xl mr-4">
+      <h1 class="text-3xl font-bold text-center mt-5">Content 1</h1>
+
+      <p class="p-4 mt-4 text-justify">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis sapien nec purus porta, molestie pulvinar leo mollis. Mauris sed justo quis dui varius molestie eget non justo. Maecenas volutpat ac dui id commodo. Sed magna ex, feugiat quis metus ut, ornare auctor ante. Morbi molestie mauris a volutpat fermentum. Sed vitae tincidunt tortor. Mauris sagittis augue sed sem mollis, sed hendrerit sapien ullamcorper. Ut consequat, mi sed pretium varius, sapien felis faucibus lorem, non rhoncus felis tortor ut est. Nulla ligula orci, suscipit in dapibus quis, vulputate ut nibh. Nunc rutrum libero pharetra neque venenatis, eu pulvinar sapien
+      </p>
+
+      <button class="mt-4 px-4 py-2 bg-white rounded-md border-2 border-black hover:bg-black hover:text-white transition-all cursor-pointer duration-600 shadow-xl">
+         Click to know more
+      </button>
+   </div>
+
+   <!-- Content 2 -->
+   <div class="pt-5 bg-white lg:bg-black lg:text-white rounded-xl mr-4 text-3xl text-black font-semibold mt-4">
+      <marquee>
+         This website is personal don't try to stole any information.......
+      </marquee>
+   </div>
+<footer class="col-span-2 bg-gray-900 text-gray-400 text-sm text-center py-3">
+   © 2026 Logo • Built with Tailwind CSS
+</footer>
+
+  
+</div>
+
+</body> 
+</html>
