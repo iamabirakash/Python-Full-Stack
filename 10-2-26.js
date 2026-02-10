@@ -79,3 +79,25 @@ const handleClick = () =>{
         main.style.display = "block";
     }
 }
+
+// colors=["red","pink","blue","yellow","purple","green"]
+// i=0;
+// const handleClick=()=>{
+//     i=i+1;
+//     document.getElementById("main").style.backgroundColor=colors[i%6];
+// }
+
+// using random
+// const colors = ["red", "pink", "blue", "yellow", "purple", "green"];
+// const handleClick = () => {
+//     const randomIndex = Math.floor(Math.random() * colors.length);
+//     document.getElementById("main").style.backgroundColor = colors[randomIndex];
+// };
+
+// const handleDblClick=()=>{
+//     document.getElementById("main").style.display="none"
+// }
+
+const handleOver=()=>{
+    document.getElementById("btn").style.display="none"
+}
