@@ -20,6 +20,9 @@
                 Add Note <i class="fa-solid fa-arrow-right"></i>
             </button>
         </div>
+        {% for message in messages %}
+                <div class="mb-3 alert alert-danger">Details Not saved</div>
+        {% endfor %}
 
     </form>
 
