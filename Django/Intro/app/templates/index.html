@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container py-5">
+    <form class="container mx-auto card p-4" action="{% url 'save_data' %}" method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="title">Note Title</label>
+            <input type="text" id="title" name="title" class="form-control"  placeholder="Enter Note Title">
+        </div>
+
+        <div class="mb-3">
+            <label for="desc">Note Description</label>
+            <textarea rows="5" id="desc" name="description" class="form-control" placeholder="Enter Note Description"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" style="width: 100%;" class="btn btn-primary">
+                Add Note <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+{% endblock %}
