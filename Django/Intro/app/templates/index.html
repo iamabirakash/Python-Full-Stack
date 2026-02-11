@@ -21,7 +21,11 @@
             </button>
         </div>
         {% for message in messages %}
-                <div class="mb-3 alert alert-danger">Details Not saved</div>
+            {% if message.tags == 'error' %}
+                <div class="mb-3 alert alert-danger">{{message}}</div>
+            {% else %}
+                <div class="mb-3 alert alert-success">{{message}}</div>
+            {% endif %}
         {% endfor %}
 
     </form>
