@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="eleven_style.css">
+</head>
+<body>
+     <!-- <input type="text" onkeydown="handleDown()" onkeyup="handleUp()"/>  -->
+     <!-- <input type="text" id ="inp" onchange="handleChange()" 
+     oninput="handleInput()"/> -->
+     <!-- <input type="text" id="inp"/>
+     <button onclick="handleClick()">  Click </button>
+     <br>
+     <h1>Value is: </h1>
+    <h3 id="output"></h3> -->
+    <!-- <button onclick="handleClick()"> Add Para </button> -->
+
+    <!-- use form when we have multiple input box -->
+     <form onsubmit="handleSubmit(event)">
+        <!-- <input type="text" id="name" placeholder="Name">
+        <input type="text" id="message" placeholder="Message"> -->
+          <!-- to-do list -->
+        <input type="text" id="task" placeholder="Task">
+        <input type="submit" value="Submit">
+        
+     </form>
+<ul id="output"></ul>
+        <!-- <input type="text" id="task" placeholder="tnput 
+    </form> -->
+    <script src="eleven.js"></script>    
+</body>
+</html> 
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Character Count</title>
+</head>
+<body>
+
+    <input type="text" id="textInput" onkeyup="countCharacters()" placeholder="Type ">
+    
+    <p id="output">Character Count: 0</p>
+
+    <script>
+        function countCharacters() {
+            let text = document.getElementById("textInput").value;
+            let count = text.length;
+
+            // Highlight the word "keyword"
+            let highlightedText = text.replace(/keyword/gi, "<b>keyword</b>");
+
+            document.getElementById("output").innerHTML = 
+                "Character Count: " + count + "<br>" + highlightedText;
+        }
+    </script>
+
+</body>
+</html> -->
+
