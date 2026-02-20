@@ -49,3 +49,33 @@ SELECT * FROM students WHERE name like '%m'; # m -> M and m both
 
 # Display students whose city is in (Delhi, Mumbai, Chandigarh).
 SELECT * FROM students WHERE address like 'Assam' or address like 'Haryana';
+
+# Display first 3 students from table
+SELECT * FROM students LIMIT 3;
+
+# Display top 3 student who scored highest marks
+SELECT * FROM students ORDER BY marks DESC LIMIT 3;
+
+# Display 2 students after skipping first 2 records.
+SELECT * FROM students LIMIT 2 OFFSET 2;
+
+# Display only 1 student with lowest marks.
+SELECT * FROM students order by marks LIMIT 1;
+
+# Display first 4 students from Mumbai.
+SELECT * FROM students WHERE address like 'ASSAM' LIMIT 1;
+
+# Display all students sorted by marks ascending
+SELECT * FROM students ORDER BY marks;
+
+# Display all students sorted by marks descending
+SELECT * FROM students ORDER BY marks DESC;
+
+# Display studynts sorted by name alphabeticålly.
+SELECT * FROM students ORDER BY name;
+
+# Display students sorted by city then marks descending
+SELECT * FROM students ORDER BY address ASC, marks DESC;
+
+# Display students sorted by age descending
+SELECT * FROM students ORDER BY age DESC;
