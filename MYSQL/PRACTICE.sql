@@ -79,3 +79,21 @@ SELECT * FROM students ORDER BY address ASC, marks DESC;
 
 # Display students sorted by age descending
 SELECT * FROM students ORDER BY age DESC;
+
+# Find the total number of students.
+SELECT COUNT(*) FROM students;
+
+# Find the maximum marks scored.
+SELECT MAX(marks) FROM students;
+
+# Find the minimum marks scored.
+SELECT MIN(marks) FROM students;
+
+# Find the average marks of students.
+SELECT AVG(marks) FROM students;
+
+# Find the sum of all marks.
+SELECT SUM(marks) FROM students;
+
+
+
