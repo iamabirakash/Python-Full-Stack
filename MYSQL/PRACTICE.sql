@@ -95,5 +95,49 @@ SELECT AVG(marks) FROM students;
 # Find the sum of all marks.
 SELECT SUM(marks) FROM students;
 
+# Count students age-wise.
+SELECT age,count(*) FROM students GROUP BY age ORDER BY age;
 
+# Show cities having more than 1 student.
+SELECT address,COUNT(*) FROM students GROUP BY address HAVING COUNT(*) > 1;
 
+# Show cities where average marks is greater than 80.
+SELECT address, AVG(marks) FROM students GROUP BY address HAVING AVG(marks) > 80;
+
+# Show age groups having total marks more than 80.
+SELECT age, AVG(marks) FROM students GROUP BY age HAVING AVG(marks) > 80;
+
+# 44 Show cities where maximum marks is 90
+SELECT address,MAX(marks) FROM students GROUP BY address HAVING MAX(marks) = 90;
+
+# Update marks of Mukund to 95
+SET SQL_SAFE_UPDATES = 0;
+UPDATE students SET marks = 95 WHERE name = 'Mukund';
+SELECT * FROM students;
+
+# Update city of Rahul to Mumbai.
+UPDATE students SET address = 'UP' WHERE name = 'Vikas';
+
+# Increase marks by 5 for students from Delhi.
+UPDATE students SET marks = marks + 1 WHERE address = 'Telengana';
+
+# Update age to 22 where name is Vikas.
+UPDATE students SET age = 22 WHERE name = 'Vikas';
+
+# Update marks to 100 where city is Assam.
+UPDATE students SET marks = 100 WHERE address = 'Assam';
+
+# Delete student amed Kunal.
+INSERT INTO students VALUES('Kunal',20,'Mumbai',99);
+DELETE FROM students WHERE name = 'Kunal';
+
+# Delete marks less than 65.
+DELETE FROM students WHERE marks < 65;
+
+# Delete students from Chandigarh.
+INSERT INTO students VALUES('Kunal',20,'Chandigarh',99);
+DELETE FROM students WHERE address = 'Chandigarh';
+
+# Delete students whose age is greater than 23.
+INSERT INTO students VALUES('Kunal',23,'Chandigarh',99);
+DELETE FROM students WHERE age > 22;
